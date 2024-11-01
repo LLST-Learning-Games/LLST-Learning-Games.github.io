@@ -1,0 +1,271 @@
+@import url('https://fonts.googleapis.com/css2?family=VT323&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0px auto;
+    font-family: "Inconsolata", monospace;
+    color: #1F3864;
+    background: #F4F4F4;
+  }
+
+a {
+    text-decoration: none;
+    color: #1F3864;
+    transition: all 0.5s;
+}
+a:hover {
+    color: #B4C7E7;
+}
+
+
+/* top navbar styles */ 
+
+.main-nav {
+    width: 100%;
+    min-height: 30px;
+    padding: 10px;
+    position: fixed;
+    text-align: center;
+    background: #F4F4F4;
+    font-family: 'VT323', monospace;
+    font-size: 150%;
+}
+.nav {
+    display: flex;
+    justify-content: space-around;
+    font-weight: 600;
+    list-style-type: none;
+    margin: 0 auto;
+    padding: 0;
+}
+
+.nav .name {
+    display: block;
+    margin-right: auto;
+    color: #B4C7E7;
+}
+
+.nav li {
+    padding: 5px 10px 10px 10px;
+    width: 50%;
+    justify-content: space-evenly;
+}
+
+h2 {
+    font-family: 'VT323', monospace;
+    font-size: 3em;
+    margin-top:60px;
+    width: 100%;
+}
+
+h3 {
+    padding: 0 20px; 
+    
+    font-family: 'VT323', monospace;
+    font-size: 2em;
+    line-height: 1em;
+}
+
+
+section
+{
+    width: 100%;
+    padding: 0 10% 5vh;
+    display:flex;
+    flex-wrap:wrap;
+}
+
+/* Intro section image */
+
+#intro{
+    background-color: #B4C7E7;
+    padding:30vh 10%;
+    font-size: 3vh;
+    display: flex;
+    min-height:100vh;
+    font-family: 'Oswald', sans-serif;
+}
+
+#intro #intro_bio{
+    width: 50%;
+}
+#intro #hello {
+    font-size: 6vh;
+    line-height: 8vh;
+    font-family: 'VT323', monospace;
+}
+
+#intro #hello_email {
+    font-size: 2.5vh;
+    padding-top: 1vh;
+}
+
+#intro a:hover {
+    color: #4472C4;
+}
+
+#intro #bioPic {
+    width:30vh;
+    height:30vh;
+    margin: 0px 40px;
+    border-radius: 50%;
+    border: 3px solid 1F3864;
+    transition: all 0.5s;
+}
+
+#intro #bioPic:hover {
+    transform: scale(1.2) rotate(5deg);
+}
+
+.project {
+    min-height: 200px;
+    border: 2px solid #B4C7E7;
+    border-radius: 10px;
+    clear:both;
+    max-width: 45%;
+    margin: 20px;
+} 
+
+.project p{
+    margin: 20px;
+}
+
+.project a {
+    text-decoration: underline;
+}
+
+#bio .project img {
+    float: left;
+    margin: 0px 20px 30px;
+    width: 25%;
+    border-radius: 10px;
+}
+
+.project img {
+    float: left;
+    margin: 0px 20px 30px;
+    width: 50%;
+    border-radius: 10px;
+}
+
+#bio ul{
+    list-style: none;
+    margin: 20px;
+    line-height: 220%;
+}
+
+
+#portfolio ul{
+    list-style: inside;
+}
+
+
+#portfolio div::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+
+
+#LLST {
+    width: 90%;
+    margin-top:10px;
+}
+
+
+footer {
+    display:flex;
+    background-color: #B4C7E7;
+    padding: 10vh;
+    justify-content: right;
+    text-align: right;
+}
+
+footer p{
+    width: 40%;
+}
+footer a:hover {
+    color: #4472C4;
+}
+
+
+@media only screen and (max-width: 991px) {
+    
+    .main-nav {
+        min-height: 20px;
+        font-size: 100%;
+    }
+    .nav {
+        flex-direction: column;
+    }
+    .nav .name {
+        width:100%;
+    }
+    
+    .nav li {
+        width:100%
+    }
+
+    #intro{
+        background-color: #B4C7E7;
+        padding:16vh 10%;
+        font-size: 2vh;
+        display: flex;
+        height:100vh;
+        justify-content: center;
+    }
+    
+
+
+    #intro #intro_bio{
+        width: 100%;
+    }
+    #intro #hello {
+        font-size: 5vh;
+        line-height: 6vh;
+        font-family: 'VT323', monospace;
+    }
+    
+    #intro #hello_email {
+        font-size: 2.5vh;
+        padding-top: 1vh;
+    }
+    
+    #intro a:hover {
+        color: #4472C4;
+    }
+
+    .project {
+        min-width: 90%;
+    } 
+    h2 {
+        margin-top:100px;
+        font-size: 2.5em;
+    }
+
+    h3 {
+        margin: 5px 20px; 
+        font-size: 1.8em;
+        line-height: 1.8em;
+    }
+
+    .project img {
+        margin: 5%;
+        width: 90%;
+        border-radius: 10px;
+    }
+
+    footer {
+        flex-direction:column;
+    }
+    
+    footer p{
+        width: 100%;
+    }
+}
